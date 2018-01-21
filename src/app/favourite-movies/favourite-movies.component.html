@@ -1,0 +1,6 @@
+<div class="col-12" style="max-width: 1200px; margin:auto;">
+    <h2><ins>Your favourite movies</ins></h2>
+    <div class="row">
+        <app-movie-list *ngFor="let movie of movies" [movie]="movie" class="card-deck col-lg-3 col-md-4 col-sm-6 col-12 margin-bottom" [routerLink]="['/movie', 'details' , movie.id]"></app-movie-list>
+    </div>
+</div>
